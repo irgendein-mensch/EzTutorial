@@ -1,0 +1,5 @@
+name: EzTutorial
+version: '1.0.0'
+main: de.protokollmensch.eztutorial.EzTutorial
+api-version: '1.21'
+authors: [ irgendein-mensch ]
