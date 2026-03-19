@@ -1,0 +1,61 @@
+# ============================================================
+# Bug or Help? -> discord.gg/soulshine
+# ============================================================
+# Tutorial settings and tasks
+#
+# Supported task types right now:
+# - MOVE_TO: Player has to reach X/Y/Z in a world (with radius)
+# - COMMAND: Player has to run a command (without leading slash also works)
+#
+# Task fields:
+# - id (string, unique)
+# - type (MOVE_TO | COMMAND)
+# - description (chat/gui text)
+# - world, x, y, z, radius (MOVE_TO)
+# - command (COMMAND)
+#
+# More task types can be added in future versions by extending TaskType and TutorialService.
+
+tutorial:
+  gui-enabled: true
+  open-gui-on-tutorial-command: true
+  auto-prompt-first-join: true
+  auto-start-first-join: false
+
+  bypass-permission: "eztutorial.bypass"
+  skip-permission: "eztutorial.skip"
+
+  tasks:
+    - id: "spawn-arrival"
+      type: "MOVE_TO"
+      world: "world"
+      x: 0
+      y: 64
+      z: 0
+      radius: 5
+      description: "&7Walk to the spawn point at &b0 64 0&7."
+
+    - id: "read-rules"
+      type: "COMMAND"
+      command: "rules"
+      description: "&7Run the command &b/rules&7."
+
+    - id: "visit-market"
+      type: "MOVE_TO"
+      world: "world"
+      x: 25
+      y: 64
+      z: -12
+      radius: 6
+      description: "&7Visit the market area at &b25 64 -12&7."
+
+    - id: "open-help"
+      type: "COMMAND"
+      command: "help"
+      description: "&7Run &b/help &7to see available commands."
+
+completion:
+  # Add your own reward commands here.
+  commands:
+    - "eco give %player_name% 250"
+

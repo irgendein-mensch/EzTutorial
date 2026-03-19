@@ -1,0 +1,54 @@
+# ============================================================
+# Bug or Help? -> discord.gg/soulshine
+# ============================================================
+# This is the root config with global settings.
+# For better structure, additional settings are split into:
+# - messages.yml
+# - gui.yml
+# - tutorial.yml
+# - storage.yml
+
+config-version: 2
+
+debug:
+  # Enables extra logs (useful for troubleshooting)
+  enabled: false
+
+display:
+  # How task starts should be shown:
+  # CHAT | ACTIONBAR | TITLE | SCOREBOARD
+  task-start:
+    mode: "ACTIONBAR"
+
+  # How task completion messages should be shown:
+  # CHAT | ACTIONBAR | TITLE | SCOREBOARD
+  task-complete:
+    mode: "ACTIONBAR"
+
+  actionbar:
+    task-start: "&bTask %task_current%/%task_total%: &f%task_description%"
+    task-complete: "&aTask completed!"
+
+  title:
+    task-start:
+      title: "#67dcffTask %task_current%/%task_total%"
+      subtitle: "%task_description%"
+    task-complete:
+      title: "#72ff9eTask completed"
+      subtitle: "&7Moving to the next task"
+
+  scoreboard:
+    title: "#67dcff&lTutorial"
+    task-start-lines:
+      - "&8&m----------------"
+      - "&7Player: &f%player_name%"
+      - "&7Task: &f%task_current%/%task_total%"
+      - "&7ID: &f%task_id%"
+      - "&f%task_description%"
+      - "&8&m----------------"
+    task-complete-lines:
+      - "&8&m----------------"
+      - "&aTask completed"
+      - "&7Progress: &f%task_current%/%task_total%"
+      - "&8&m----------------"
+

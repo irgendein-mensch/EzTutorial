@@ -1,0 +1,40 @@
+# ============================================================
+# Bug or Help? -> discord.gg/soulshine
+# ============================================================
+# Placeholders:
+# %player_name%, %eztutorial_progress%, %eztutorial_total_tasks%
+# %eztutorial_completed%, %eztutorial_active%, %task_id%, %task_description%
+# Hex colors work: #55ddffText
+
+messages:
+  first-join-prompt:
+    - "#55ddffWelcome #ffffff%player_name%#55ddff!"
+    - "&7Use &b/tutorial &7to start your tutorial."
+    - "&7Progress: &b%eztutorial_progress%&7/&b%eztutorial_total_tasks%"
+    - "&8&m------------------------------------------"
+
+  help:
+    - "&b/tutorial start &7- Start your tutorial"
+    - "&b/tutorial status &7- Show your progress"
+    - "&b/tutorial skip &7- Skip (if allowed)"
+
+  task-start:
+    - "&8&m------------------------------------------"
+    - "#6de0ffTask &f%task_current%&7/&f%task_total% &8(&7%task_id%&8)"
+    - "%task_description%"
+    - "&8&m------------------------------------------"
+
+  task-complete:
+    - "#72ff9eTask completed!"
+
+  tutorial-complete:
+    - "#72ff9eGreat job! You completed the tutorial."
+    - "&7You can still view your progress in the GUI."
+
+  already-completed: "&aYou already completed the tutorial."
+  no-active-tutorial: "&cYou do not have an active tutorial right now."
+  skip-not-allowed: "&cYou are not allowed to skip the tutorial."
+  reloaded: "&aAll config files were reloaded."
+  player-reset: "&aPlayer tutorial progress has been reset."
+  player-started: "&aTutorial has been started for the player."
+

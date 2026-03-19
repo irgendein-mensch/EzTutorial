@@ -1,0 +1,64 @@
+# ============================================================
+# Bug or Help? -> discord.gg/soulshine
+# ============================================================
+# GUI layout for /tutorial
+# Slots are 0-based (0-35 for 4 rows).
+
+gui:
+  title: "#55ddff&lServer Tutorial"
+  rows: 4
+
+  filler-item: "BLACK_STAINED_GLASS_PANE"
+
+  header-item:
+    material: "NETHER_STAR"
+    name: "#7ce8ff&lTutorial Overview"
+    lore:
+      - "&7Complete all tasks"
+      - "&7to finish your tutorial."
+    slot: 4
+
+  task-item:
+    open: "BOOK"
+    done: "LIME_DYE"
+
+  task-slots:
+    - 10
+    - 11
+    - 12
+    - 13
+    - 14
+    - 15
+    - 16
+    - 19
+    - 20
+    - 21
+    - 22
+    - 23
+    - 24
+    - 25
+
+  start-item:
+    material: "EMERALD"
+    name: "&aStart / Resume"
+    lore:
+      - "&7Starts your tutorial"
+      - "&7or resumes it."
+    slot: 27
+
+  skip-item:
+    enabled: true
+    material: "FEATHER"
+    name: "&6Skip Tutorial"
+    lore:
+      - "&7Only with the correct permission"
+      - "&8Permission: eztutorial.skip"
+    slot: 31
+
+  close-item:
+    material: "BARRIER"
+    name: "&cClose"
+    lore:
+      - "&7Closes this menu."
+    slot: 35
+

@@ -1,0 +1,20 @@
+# ============================================================
+# Bug or Help? -> discord.gg/soulshine
+# ============================================================
+# Storage mode for player progress
+# type: yml | sqlite | mysql
+
+storage:
+  type: "yml"
+
+  sqlite:
+    # File location inside plugins/EzTutorial/
+    file: "players.db"
+
+  mysql:
+    host: "127.0.0.1"
+    port: 3306
+    database: "eztutorial"
+    username: "root"
+    password: "changeme"
+

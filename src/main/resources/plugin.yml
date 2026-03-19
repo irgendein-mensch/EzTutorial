@@ -2,4 +2,23 @@ name: EzTutorial
 version: '1.0.0'
 main: de.protokollmensch.eztutorial.EzTutorial
 api-version: '1.21'
-authors: [ irgendein-mensch ]
+authors: [ protokollmensch ]
+softdepend: [ PlaceholderAPI ]
+commands:
+  eztutorial:
+    description: Manage the tutorial system
+    usage: /eztutorial <help|reload|start|reset|status>
+    permission: eztutorial.admin
+    permission-message: You do not have permission for this.
+  tutorial:
+    description: Start or view your tutorial
+    usage: /tutorial [start|resume|status|skip|reload]
+permissions:
+  eztutorial.admin:
+    default: op
+  eztutorial.use:
+    default: true
+  eztutorial.skip:
+    default: false
+  eztutorial.bypass:
+    default: false
