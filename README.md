@@ -1,7 +1,7 @@
 # EzTutorial
 
 A configurable tutorial system for Paper servers.
-Versions: 1.21.X
+Version: 1.21.X
 
 ## Features
 
